@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATELIER - Modern Essentials</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">ATELIER</a>
+                <div class="nav-links">
+                    <a href="#" class="nav-link">Collections</a>
+                    <a href="#" class="nav-link">New Arrivals</a>
+                    <a href="#" class="nav-link">About</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="nav-link">Search</a>
+                <a href="login.html" class="nav-link">Account</a>
+                <a href="#" class="nav-link cart-link">
+                    Cart
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#" class="mobile-nav-link">Collections</a>
+            <a href="#" class="mobile-nav-link">New Arrivals</a>
+            <a href="#" class="mobile-nav-link">About</a>
+            <a href="#" class="mobile-nav-link">Search</a>
+            <a href="login.html" class="mobile-nav-link">Account</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Curated for<br>
+                <span class="hero-accent">Discerning Taste</span>
+            </h1>
+            <p class="hero-subtitle">Contemporary pieces that transcend seasonal trends</p>
+            <a href="#products" class="cta-button">Explore Collection</a>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Shop by Category</h2>
+            </div>
+            <div class="category-grid">
+                <div class="category-card" style="--delay: 0s;">
+                    <div class="category-image">
+                        <div class="category-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    </div>
+                    <h3 class="category-name">Furniture</h3>
+                </div>
+                <div class="category-card" style="--delay: 0.1s;">
+                    <div class="category-image">
+                        <div class="category-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    </div>
+                    <h3 class="category-name">Lighting</h3>
+                </div>
+                <div class="category-card" style="--delay: 0.2s;">
+                    <div class="category-image">
+                        <div class="category-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    </div>
+                    <h3 class="category-name">Decor</h3>
+                </div>
+                <div class="category-card" style="--delay: 0.3s;">
+                    <div class="category-image">
+                        <div class="category-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                    </div>
+                    <h3 class="category-name">Textiles</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">New Arrivals</h2>
+                <p class="section-subtitle">Handpicked pieces for modern living</p>
+            </div>
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Summary Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Subtotal:</span>
+                <span class="total-price" id="totalPrice">$0.00</span>
+            </div>
+            <button class="checkout-button">Proceed to Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4 class="footer-title">ATELIER</h4>
+                    <p class="footer-text">Timeless design for contemporary spaces</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Shop</h4>
+                    <a href="#" class="footer-link">New Arrivals</a>
+                    <a href="#" class="footer-link">Best Sellers</a>
+                    <a href="#" class="footer-link">Collections</a>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Support</h4>
+                    <a href="#" class="footer-link">Contact Us</a>
+                    <a href="#" class="footer-link">Shipping</a>
+                    <a href="#" class="footer-link">Returns</a>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="footer-text">Subscribe for updates and exclusive offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input">
+                        <button type="submit" class="newsletter-button">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Atelier. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
